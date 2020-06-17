@@ -1,0 +1,1164 @@
+INFO  - [SOLR] - 2018-03-12 23:13:56.153; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - [SOLR] - 2018-03-12 23:13:56.174; org.apache.solr.core.SolrResourceLoader; Using JNDI solr.home: /home/dothr/app/solr-4.3.0/example/solr
+INFO  - [SOLR] - 2018-03-12 23:13:56.189; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: /home/dothr/app/solr-4.3.0/example/solr/solr.xml
+INFO  - [SOLR] - 2018-03-12 23:13:56.192; org.apache.solr.core.CoreContainer; New CoreContainer 1371589849
+INFO  - [SOLR] - 2018-03-12 23:13:56.202; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-03-12 23:13:56.202; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-03-12 23:13:56.758; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - [SOLR] - 2018-03-12 23:13:56.759; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - [SOLR] - 2018-03-12 23:13:56.759; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - [SOLR] - 2018-03-12 23:13:56.760; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - [SOLR] - 2018-03-12 23:13:56.760; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - [SOLR] - 2018-03-12 23:13:56.760; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - [SOLR] - 2018-03-12 23:13:56.760; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - [SOLR] - 2018-03-12 23:13:56.761; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - [SOLR] - 2018-03-12 23:13:56.761; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - [SOLR] - 2018-03-12 23:13:56.799; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - [SOLR] - 2018-03-12 23:13:57.086; org.apache.solr.core.CoreContainer; Registering Log Listener
+INFO  - [SOLR] - 2018-03-12 23:13:57.102; org.apache.solr.core.CoreContainer; Creating SolrCore 'core' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/core
+INFO  - [SOLR] - 2018-03-12 23:13:57.106; org.apache.solr.core.CoreContainer; Creating SolrCore 'coreModel' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/coreModel
+INFO  - [SOLR] - 2018-03-12 23:13:57.119; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/core/'
+INFO  - [SOLR] - 2018-03-12 23:13:57.122; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/numberFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.122; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/emailFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.123; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/classifierTce.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.123; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/similarityTce.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.124; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/urllFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.130; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/coreModel/'
+INFO  - [SOLR] - 2018-03-12 23:13:57.238; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-03-12 23:13:57.250; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-03-12 23:13:57.257; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.260; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.260; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.260; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.261; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.261; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.262; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.262; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.263; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.263; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.264; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.264; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.269; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.269; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.270; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.270; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.270; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.273; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.269; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.273; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.274; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.274; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.274; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.275; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.275; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.275; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.276; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.276; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.276; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.276; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.277; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.278; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.279; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.279; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.281; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.281; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.281; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.282; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.282; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.282; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.280; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.283; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.283; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.284; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.284; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.284; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.285; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.285; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.286; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.287; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.288; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.288; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.289; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.290; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.290; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.291; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.292; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.294; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - [SOLR] - 2018-03-12 23:13:57.295; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../lib/ (resolved as: /home/dothr/app/solr-4.3.0/example/solr/core/../lib).
+WARN  - [SOLR] - 2018-03-12 23:13:57.296; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - [SOLR] - 2018-03-12 23:13:57.298; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.298; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.299; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.299; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-03-12 23:13:57.300; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - [SOLR] - 2018-03-12 23:13:57.300; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - [SOLR] - 2018-03-12 23:13:58.297; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-03-12 23:13:58.317; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-03-12 23:13:58.451; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-03-12 23:13:58.452; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-03-12 23:13:58.459; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-03-12 23:13:58.459; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-03-12 23:13:58.565; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-03-12 23:13:58.577; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-03-12 23:13:59.185; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-03-12 23:13:59.187; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-03-12 23:13:59.415; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-03-12 23:13:59.440; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-03-12 23:13:59.833; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-03-12 23:13:59.857; org.apache.solr.core.SolrCore; [coreModel] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/coreModel/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/
+INFO  - [SOLR] - 2018-03-12 23:13:59.861; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@14325ad8
+INFO  - [SOLR] - 2018-03-12 23:13:59.924; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-03-12 23:13:59.924; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-03-12 23:13:59.931; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-03-12 23:13:59.976; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data
+INFO  - [SOLR] - 2018-03-12 23:13:59.986; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index/
+INFO  - [SOLR] - 2018-03-12 23:14:00.001; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-03-12 23:14:00.038; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:00.038; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:00.039; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:00.046; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:00.046; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-03-12 23:14:00.270; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.271; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.278; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.280; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.288; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.294; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.300; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.301; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.302; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.302; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.303; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.303; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.303; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.309; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - [SOLR] - 2018-03-12 23:14:00.314; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.321; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.342; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.342; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.343; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.343; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.343; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.344; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.344; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.344; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.345; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - [SOLR] - 2018-03-12 23:14:00.381; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-03-12 23:14:00.385; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-03-12 23:14:00.386; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-03-12 23:14:00.490; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@27c92ac9 main
+INFO  - [SOLR] - 2018-03-12 23:14:00.569; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - [SOLR] - 2018-03-12 23:14:00.569; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - [SOLR] - 2018-03-12 23:14:00.572; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - [SOLR] - 2018-03-12 23:14:00.589; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - [SOLR] - 2018-03-12 23:14:00.604; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - [SOLR] - 2018-03-12 23:14:00.608; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/dothr/app/solr-4.3.0/example/solr/coreModel/conf/elevate.xml
+INFO  - [SOLR] - 2018-03-12 23:14:00.676; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - [SOLR] - 2018-03-12 23:14:00.677; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@27c92ac9 main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-03-12 23:14:00.761; org.apache.solr.core.SolrCore; [coreModel] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=78 
+INFO  - [SOLR] - 2018-03-12 23:14:00.762; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - [SOLR] - 2018-03-12 23:14:00.762; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - [SOLR] - 2018-03-12 23:14:00.764; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - [SOLR] - 2018-03-12 23:14:00.769; org.apache.solr.core.SolrCore; [coreModel] Registered new searcher Searcher@27c92ac9 main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-03-12 23:14:00.775; org.apache.solr.core.CoreContainer; registering core: coreModel
+INFO  - [SOLR] - 2018-03-12 23:14:01.207; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-03-12 23:14:01.215; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-03-12 23:14:01.298; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-03-12 23:14:01.299; org.apache.solr.core.SolrCore; [core] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/core/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/core/data/
+INFO  - [SOLR] - 2018-03-12 23:14:01.299; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@14325ad8
+INFO  - [SOLR] - 2018-03-12 23:14:01.305; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-03-12 23:14:01.305; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-03-12 23:14:01.305; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-03-12 23:14:01.306; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data
+INFO  - [SOLR] - 2018-03-12 23:14:01.319; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/core/data/index/
+INFO  - [SOLR] - 2018-03-12 23:14:01.335; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+INFO  - [SOLR] - 2018-03-12 23:14:01.335; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:01.336; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:01.336; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:01.336; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-03-12 23:14:01.336; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-03-12 23:14:01.341; net.tce.solr.processor.ClassifierTceFactory;  %&$ Se inicializa ClassifierTceFactory
+INFO  - [SOLR] - 2018-03-12 23:14:02.959; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:03.960; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:04.962; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:05.963; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:06.965; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:07.966; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:08.968; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:09.970; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:10.972; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:11.974; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-03-12 23:14:11.981; org.apache.solr.core.SolrCore; [core]  CLOSING SolrCore org.apache.solr.core.SolrCore@7df2df27
+INFO  - [SOLR] - 2018-03-12 23:14:11.984; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-03-12 23:14:11.984; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-03-12 23:14:11.986; org.apache.solr.core.SolrCore; [core] Closing main searcher on request.
+INFO  - [SOLR] - 2018-03-12 23:14:11.987; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-03-12 23:14:11.989; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data;done=false>>]
+INFO  - [SOLR] - 2018-03-12 23:14:11.989; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data
+INFO  - [SOLR] - 2018-03-12 23:14:11.990; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data/index;done=false>>]
+INFO  - [SOLR] - 2018-03-12 23:14:11.991; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+ERROR - [SOLR] - 2018-03-12 23:14:11.993; org.apache.solr.core.CoreContainer; Unable to create core: core
+org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+ERROR - [SOLR] - 2018-03-12 23:14:11.998; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: core
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1450)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:993)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+
+INFO  - [SOLR] - 2018-03-12 23:14:12.002; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/dothr/workspace/AgroBalsasUI
+INFO  - [SOLR] - 2018-03-12 23:14:12.003; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - [SOLR] - 2018-03-12 23:58:06.227; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1371589849
+INFO  - [SOLR] - 2018-03-12 23:58:06.739; org.apache.solr.core.SolrCore; [coreModel]  CLOSING SolrCore org.apache.solr.core.SolrCore@1cf357f4
+INFO  - [SOLR] - 2018-03-12 23:58:06.742; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - [SOLR] - 2018-03-12 23:58:06.742; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-03-12 23:58:06.743; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-03-12 23:58:06.744; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - [SOLR] - 2018-03-12 23:58:06.745; org.apache.solr.core.SolrCore; [coreModel] Closing main searcher on request.
+INFO  - [SOLR] - 2018-03-12 23:58:06.746; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-03-12 23:58:06.747; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data;done=false>>]
+INFO  - [SOLR] - 2018-03-12 23:58:06.748; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data
+INFO  - [SOLR] - 2018-03-12 23:58:06.748; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index;done=false>>]
+INFO  - [SOLR] - 2018-03-12 23:58:06.748; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-05-02 14:18:25.532; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - [SOLR] - 2018-05-02 14:18:25.547; org.apache.solr.core.SolrResourceLoader; Using JNDI solr.home: /home/dothr/app/solr-4.3.0/example/solr
+INFO  - [SOLR] - 2018-05-02 14:18:25.557; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: /home/dothr/app/solr-4.3.0/example/solr/solr.xml
+INFO  - [SOLR] - 2018-05-02 14:18:25.560; org.apache.solr.core.CoreContainer; New CoreContainer 97033092
+INFO  - [SOLR] - 2018-05-02 14:18:25.562; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-05-02 14:18:25.562; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-05-02 14:18:26.059; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - [SOLR] - 2018-05-02 14:18:26.059; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - [SOLR] - 2018-05-02 14:18:26.059; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - [SOLR] - 2018-05-02 14:18:26.060; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - [SOLR] - 2018-05-02 14:18:26.060; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - [SOLR] - 2018-05-02 14:18:26.060; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - [SOLR] - 2018-05-02 14:18:26.061; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - [SOLR] - 2018-05-02 14:18:26.061; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - [SOLR] - 2018-05-02 14:18:26.061; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - [SOLR] - 2018-05-02 14:18:26.101; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - [SOLR] - 2018-05-02 14:18:26.473; org.apache.solr.core.CoreContainer; Registering Log Listener
+INFO  - [SOLR] - 2018-05-02 14:18:26.494; org.apache.solr.core.CoreContainer; Creating SolrCore 'core' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/core
+INFO  - [SOLR] - 2018-05-02 14:18:26.496; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/core/'
+INFO  - [SOLR] - 2018-05-02 14:18:26.497; org.apache.solr.core.CoreContainer; Creating SolrCore 'coreModel' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/coreModel
+INFO  - [SOLR] - 2018-05-02 14:18:26.497; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/coreModel/'
+INFO  - [SOLR] - 2018-05-02 14:18:26.511; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/numberFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.512; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/emailFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.512; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/classifierTce.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.512; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/similarityTce.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.512; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/urllFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.690; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-05-02 14:18:26.693; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.694; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.694; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.694; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.695; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.695; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.695; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.696; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.696; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.696; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.697; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.697; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.697; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.698; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.698; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.699; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.699; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.700; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.700; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.700; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.701; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.701; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.702; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.702; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.702; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.702; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.703; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.703; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.703; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.707; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-05-02 14:18:26.710; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.711; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.711; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.711; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.712; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.712; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.712; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.713; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.713; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.713; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.714; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.714; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.714; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.714; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.715; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.715; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.715; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.716; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.716; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.716; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.717; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.717; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.717; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.718; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.718; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.718; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.719; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.719; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.720; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.729; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.732; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.732; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.733; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.733; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.733; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.734; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.734; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.735; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.735; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.736; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.737; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.734; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.738; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.739; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.739; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.739; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.740; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.740; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.741; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.742; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.743; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.744; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.745; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.746; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.746; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.746; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.747; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - [SOLR] - 2018-05-02 14:18:26.748; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../lib/ (resolved as: /home/dothr/app/solr-4.3.0/example/solr/core/../lib).
+INFO  - [SOLR] - 2018-05-02 14:18:26.744; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+WARN  - [SOLR] - 2018-05-02 14:18:26.748; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - [SOLR] - 2018-05-02 14:18:26.749; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.749; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.750; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.750; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.751; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.751; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-05-02 14:18:26.752; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - [SOLR] - 2018-05-02 14:18:26.753; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - [SOLR] - 2018-05-02 14:18:27.624; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-05-02 14:18:27.632; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-05-02 14:18:27.831; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-05-02 14:18:27.835; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-05-02 14:18:27.850; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-05-02 14:18:27.852; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-05-02 14:18:27.986; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-05-02 14:18:27.991; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-05-02 14:18:28.876; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-05-02 14:18:28.877; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-05-02 14:18:29.126; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-05-02 14:18:29.223; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-05-02 14:18:29.836; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-05-02 14:18:29.853; org.apache.solr.core.SolrCore; [coreModel] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/coreModel/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/
+INFO  - [SOLR] - 2018-05-02 14:18:29.855; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@67099f71
+INFO  - [SOLR] - 2018-05-02 14:18:29.912; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-05-02 14:18:29.913; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-05-02 14:18:29.921; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-05-02 14:18:29.964; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data
+INFO  - [SOLR] - 2018-05-02 14:18:29.972; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index/
+INFO  - [SOLR] - 2018-05-02 14:18:29.993; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-05-02 14:18:30.030; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:30.032; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:30.033; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:30.040; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:30.051; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-05-02 14:18:30.448; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.459; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.464; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.465; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.473; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.480; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.486; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.486; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.488; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.488; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.489; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.489; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.489; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.493; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - [SOLR] - 2018-05-02 14:18:30.499; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.505; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.538; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.538; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.539; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.540; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.540; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.541; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.541; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.541; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.542; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - [SOLR] - 2018-05-02 14:18:30.639; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-05-02 14:18:30.647; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-05-02 14:18:30.647; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-05-02 14:18:30.733; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@69e15a5f main
+INFO  - [SOLR] - 2018-05-02 14:18:30.856; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - [SOLR] - 2018-05-02 14:18:30.857; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - [SOLR] - 2018-05-02 14:18:30.858; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - [SOLR] - 2018-05-02 14:18:30.880; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - [SOLR] - 2018-05-02 14:18:30.906; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - [SOLR] - 2018-05-02 14:18:30.911; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/dothr/app/solr-4.3.0/example/solr/coreModel/conf/elevate.xml
+INFO  - [SOLR] - 2018-05-02 14:18:31.065; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - [SOLR] - 2018-05-02 14:18:31.066; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@69e15a5f main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-05-02 14:18:31.195; org.apache.solr.core.SolrCore; [coreModel] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=121 
+INFO  - [SOLR] - 2018-05-02 14:18:31.196; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - [SOLR] - 2018-05-02 14:18:31.196; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - [SOLR] - 2018-05-02 14:18:31.201; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - [SOLR] - 2018-05-02 14:18:31.206; org.apache.solr.core.SolrCore; [coreModel] Registered new searcher Searcher@69e15a5f main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-05-02 14:18:31.216; org.apache.solr.core.CoreContainer; registering core: coreModel
+INFO  - [SOLR] - 2018-05-02 14:18:31.332; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-05-02 14:18:31.350; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-05-02 14:18:31.468; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-05-02 14:18:31.469; org.apache.solr.core.SolrCore; [core] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/core/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/core/data/
+INFO  - [SOLR] - 2018-05-02 14:18:31.472; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@67099f71
+INFO  - [SOLR] - 2018-05-02 14:18:31.485; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-05-02 14:18:31.485; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-05-02 14:18:31.485; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-05-02 14:18:31.486; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data
+INFO  - [SOLR] - 2018-05-02 14:18:31.486; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/core/data/index/
+INFO  - [SOLR] - 2018-05-02 14:18:31.493; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+INFO  - [SOLR] - 2018-05-02 14:18:31.494; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:31.494; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:31.494; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:31.495; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-05-02 14:18:31.495; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-05-02 14:18:31.500; net.tce.solr.processor.ClassifierTceFactory;  %&$ Se inicializa ClassifierTceFactory
+INFO  - [SOLR] - 2018-05-02 14:18:33.061; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:34.062; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:35.064; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:36.065; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:37.066; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:38.067; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:39.069; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:40.070; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:41.071; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:42.072; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-05-02 14:18:42.075; org.apache.solr.core.SolrCore; [core]  CLOSING SolrCore org.apache.solr.core.SolrCore@41faf4a2
+INFO  - [SOLR] - 2018-05-02 14:18:42.076; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-05-02 14:18:42.076; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-05-02 14:18:42.077; org.apache.solr.core.SolrCore; [core] Closing main searcher on request.
+INFO  - [SOLR] - 2018-05-02 14:18:42.077; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-05-02 14:18:42.077; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data;done=false>>]
+INFO  - [SOLR] - 2018-05-02 14:18:42.078; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data
+INFO  - [SOLR] - 2018-05-02 14:18:42.078; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data/index;done=false>>]
+INFO  - [SOLR] - 2018-05-02 14:18:42.078; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+ERROR - [SOLR] - 2018-05-02 14:18:42.080; org.apache.solr.core.CoreContainer; Unable to create core: core
+org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+ERROR - [SOLR] - 2018-05-02 14:18:42.085; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: core
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1450)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:993)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+
+INFO  - [SOLR] - 2018-05-02 14:18:42.087; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/dothr/workspace/AgroBalsasUI
+INFO  - [SOLR] - 2018-05-02 14:18:42.087; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - [SOLR] - 2018-05-02 15:56:10.300; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=97033092
+INFO  - [SOLR] - 2018-05-02 15:56:10.834; org.apache.solr.core.SolrCore; [coreModel]  CLOSING SolrCore org.apache.solr.core.SolrCore@750b31f0
+INFO  - [SOLR] - 2018-05-02 15:56:10.839; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - [SOLR] - 2018-05-02 15:56:10.839; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-05-02 15:56:10.840; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-05-02 15:56:10.840; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - [SOLR] - 2018-05-02 15:56:10.841; org.apache.solr.core.SolrCore; [coreModel] Closing main searcher on request.
+INFO  - [SOLR] - 2018-05-02 15:56:10.842; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-05-02 15:56:10.842; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data;done=false>>]
+INFO  - [SOLR] - 2018-05-02 15:56:10.842; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data
+INFO  - [SOLR] - 2018-05-02 15:56:10.842; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index;done=false>>]
+INFO  - [SOLR] - 2018-05-02 15:56:10.842; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-06-25 22:52:47.900; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - [SOLR] - 2018-06-25 22:52:47.927; org.apache.solr.core.SolrResourceLoader; Using JNDI solr.home: /home/dothr/app/solr-4.3.0/example/solr
+INFO  - [SOLR] - 2018-06-25 22:52:47.935; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: /home/dothr/app/solr-4.3.0/example/solr/solr.xml
+INFO  - [SOLR] - 2018-06-25 22:52:47.937; org.apache.solr.core.CoreContainer; New CoreContainer 2098261983
+INFO  - [SOLR] - 2018-06-25 22:52:47.960; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-06-25 22:52:47.961; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/'
+INFO  - [SOLR] - 2018-06-25 22:52:48.433; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - [SOLR] - 2018-06-25 22:52:48.433; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - [SOLR] - 2018-06-25 22:52:48.433; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - [SOLR] - 2018-06-25 22:52:48.433; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - [SOLR] - 2018-06-25 22:52:48.434; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - [SOLR] - 2018-06-25 22:52:48.434; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - [SOLR] - 2018-06-25 22:52:48.434; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - [SOLR] - 2018-06-25 22:52:48.434; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - [SOLR] - 2018-06-25 22:52:48.434; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - [SOLR] - 2018-06-25 22:52:48.464; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - [SOLR] - 2018-06-25 22:52:48.787; org.apache.solr.core.CoreContainer; Registering Log Listener
+INFO  - [SOLR] - 2018-06-25 22:52:48.803; org.apache.solr.core.CoreContainer; Creating SolrCore 'core' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/core
+INFO  - [SOLR] - 2018-06-25 22:52:48.808; org.apache.solr.core.CoreContainer; Creating SolrCore 'coreModel' using instanceDir: /home/dothr/app/solr-4.3.0/example/solr/coreModel
+INFO  - [SOLR] - 2018-06-25 22:52:48.849; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/coreModel/'
+INFO  - [SOLR] - 2018-06-25 22:52:48.849; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/dothr/app/solr-4.3.0/example/solr/core/'
+INFO  - [SOLR] - 2018-06-25 22:52:48.860; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/numberFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.861; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/emailFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.861; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/classifierTce.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.862; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/similarityTce.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.863; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/example/solr/core/lib/urllFilterTce.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.940; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-06-25 22:52:48.944; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.945; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.945; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.945; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.946; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.946; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.946; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.946; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.947; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.947; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.947; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.947; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.948; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.948; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.948; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.949; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.949; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.949; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.949; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.950; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.950; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.950; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.951; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.951; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.951; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.951; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.952; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.952; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.952; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.966; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - [SOLR] - 2018-06-25 22:52:48.967; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.968; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.968; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.969; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.970; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.970; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.970; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.970; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.970; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.971; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.971; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.971; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.971; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.971; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.972; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.972; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.972; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.972; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.973; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.973; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.973; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.974; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.974; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.974; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.975; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.975; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.975; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.975; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.976; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.976; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.976; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.976; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.977; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.977; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.977; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.977; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.978; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.978; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.978; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.979; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.979; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.979; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.980; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-cell-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.981; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.981; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.981; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.982; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.982; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.982; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.982; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.982; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.983; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-clustering-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.984; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.984; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.985; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-langid-4.3.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.985; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.985; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.986; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.986; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - [SOLR] - 2018-06-25 22:52:48.986; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/dothr/app/solr-4.3.0/dist/solr-velocity-4.3.0.jar' to classloader
+WARN  - [SOLR] - 2018-06-25 22:52:48.987; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../lib/ (resolved as: /home/dothr/app/solr-4.3.0/example/solr/core/../lib).
+WARN  - [SOLR] - 2018-06-25 22:52:48.996; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+WARN  - [SOLR] - 2018-06-25 22:52:48.996; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - [SOLR] - 2018-06-25 22:52:50.012; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-06-25 22:52:50.015; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - [SOLR] - 2018-06-25 22:52:50.166; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-06-25 22:52:50.168; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - [SOLR] - 2018-06-25 22:52:50.176; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-06-25 22:52:50.176; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - [SOLR] - 2018-06-25 22:52:50.305; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-06-25 22:52:50.315; org.apache.solr.schema.IndexSchema; Schema name=example
+INFO  - [SOLR] - 2018-06-25 22:52:50.902; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-06-25 22:52:50.903; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - [SOLR] - 2018-06-25 22:52:51.128; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-06-25 22:52:51.144; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-06-25 22:52:51.472; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-06-25 22:52:51.485; org.apache.solr.core.SolrCore; [coreModel] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/coreModel/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/
+INFO  - [SOLR] - 2018-06-25 22:52:51.487; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@14325ad8
+INFO  - [SOLR] - 2018-06-25 22:52:51.534; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-06-25 22:52:51.535; org.apache.solr.core.SolrCore; [coreModel] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-06-25 22:52:51.541; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-06-25 22:52:51.581; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data
+INFO  - [SOLR] - 2018-06-25 22:52:51.598; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index/
+INFO  - [SOLR] - 2018-06-25 22:52:51.613; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-06-25 22:52:51.631; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:51.631; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:51.632; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:51.639; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:51.639; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-06-25 22:52:51.832; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.834; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.838; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.840; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.847; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.851; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.856; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.856; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.857; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.858; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.858; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.858; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.859; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.863; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - [SOLR] - 2018-06-25 22:52:51.868; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.873; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.890; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.891; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.891; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.891; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.892; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.892; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.892; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.893; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.893; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - [SOLR] - 2018-06-25 22:52:51.925; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-06-25 22:52:51.929; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-06-25 22:52:51.929; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - [SOLR] - 2018-06-25 22:52:52.001; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@135c059b main
+INFO  - [SOLR] - 2018-06-25 22:52:52.075; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - [SOLR] - 2018-06-25 22:52:52.075; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - [SOLR] - 2018-06-25 22:52:52.077; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - [SOLR] - 2018-06-25 22:52:52.090; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - [SOLR] - 2018-06-25 22:52:52.104; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - [SOLR] - 2018-06-25 22:52:52.108; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/dothr/app/solr-4.3.0/example/solr/coreModel/conf/elevate.xml
+INFO  - [SOLR] - 2018-06-25 22:52:52.179; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - [SOLR] - 2018-06-25 22:52:52.179; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@135c059b main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-06-25 22:52:52.254; org.apache.solr.core.SolrCore; [coreModel] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=72 
+INFO  - [SOLR] - 2018-06-25 22:52:52.255; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - [SOLR] - 2018-06-25 22:52:52.255; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - [SOLR] - 2018-06-25 22:52:52.255; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - [SOLR] - 2018-06-25 22:52:52.260; org.apache.solr.core.SolrCore; [coreModel] Registered new searcher Searcher@135c059b main{StandardDirectoryReader(segments_ar:1008)}
+INFO  - [SOLR] - 2018-06-25 22:52:52.264; org.apache.solr.core.CoreContainer; registering core: coreModel
+INFO  - [SOLR] - 2018-06-25 22:52:52.398; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-06-25 22:52:52.406; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - [SOLR] - 2018-06-25 22:52:52.502; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-06-25 22:52:52.503; org.apache.solr.core.SolrCore; [core] Opening new SolrCore at /home/dothr/app/solr-4.3.0/example/solr/core/, dataDir=/home/dothr/app/solr-4.3.0/example/solr/core/data/
+INFO  - [SOLR] - 2018-06-25 22:52:52.503; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@14325ad8
+INFO  - [SOLR] - 2018-06-25 22:52:52.505; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - [SOLR] - 2018-06-25 22:52:52.505; org.apache.solr.core.SolrCore; [core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - [SOLR] - 2018-06-25 22:52:52.505; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - [SOLR] - 2018-06-25 22:52:52.506; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data
+INFO  - [SOLR] - 2018-06-25 22:52:52.520; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/dothr/app/solr-4.3.0/example/solr/core/data/index/
+INFO  - [SOLR] - 2018-06-25 22:52:52.537; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+INFO  - [SOLR] - 2018-06-25 22:52:52.537; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:52.537; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:52.538; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:52.538; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - [SOLR] - 2018-06-25 22:52:52.538; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - [SOLR] - 2018-06-25 22:52:52.544; net.tce.solr.processor.ClassifierTceFactory;  %&$ Se inicializa ClassifierTceFactory
+INFO  - [SOLR] - 2018-06-25 22:52:54.171; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:52:55.173; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:52:56.175; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:52:57.177; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:52:58.180; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:52:59.182; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:53:00.198; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:53:01.199; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:53:02.199; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:53:03.200; org.apache.hadoop.ipc.Client$Connection; Retrying connect to server: localhost/127.0.0.1:54310. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+INFO  - [SOLR] - 2018-06-25 22:53:03.207; org.apache.solr.core.SolrCore; [core]  CLOSING SolrCore org.apache.solr.core.SolrCore@6fc0d03d
+INFO  - [SOLR] - 2018-06-25 22:53:03.210; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-06-25 22:53:03.210; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-06-25 22:53:03.212; org.apache.solr.core.SolrCore; [core] Closing main searcher on request.
+INFO  - [SOLR] - 2018-06-25 22:53:03.213; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-06-25 22:53:03.214; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data/index;done=false>>]
+INFO  - [SOLR] - 2018-06-25 22:53:03.215; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data/index
+INFO  - [SOLR] - 2018-06-25 22:53:03.216; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/core/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/core/data;done=false>>]
+INFO  - [SOLR] - 2018-06-25 22:53:03.216; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/core/data
+ERROR - [SOLR] - 2018-06-25 22:53:03.217; org.apache.solr.core.CoreContainer; Unable to create core: core
+org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+ERROR - [SOLR] - 2018-06-25 22:53:03.220; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: core
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1450)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:993)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:597)
+	at org.apache.solr.core.CoreContainer$2.call(CoreContainer.java:592)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:821)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:618)
+	at org.apache.solr.core.CoreContainer.createFromLocal(CoreContainer.java:949)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:984)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Error initializing clasifier
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:169)
+	at net.tce.solr.processor.ClassifierTceFactory.init(ClassifierTceFactory.java:144)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:579)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2100)
+	at org.apache.solr.update.processor.UpdateRequestProcessorChain.init(UpdateRequestProcessorChain.java:92)
+	at org.apache.solr.core.SolrCore.createInitInstance(SolrCore.java:577)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2084)
+	at org.apache.solr.core.SolrCore.initPlugins(SolrCore.java:2078)
+	at org.apache.solr.core.SolrCore.loadUpdateProcessorChains(SolrCore.java:881)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:756)
+	... 11 more
+Caused by: java.lang.IllegalStateException: /user/dothr/dothr-data/coreModel/labelindex
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:63)
+	at org.apache.mahout.classifier.naivebayes.BayesUtils.readLabelIndex(BayesUtils.java:137)
+	at net.tce.solr.processor.ClassifierTceFactory.initClassifierContext(ClassifierTceFactory.java:159)
+	... 20 more
+Caused by: java.net.ConnectException: Call to localhost/127.0.0.1:54310 failed on connection exception: java.net.ConnectException: Connection refused
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1142)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:85)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:62)
+	at com.sun.proxy.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.checkVersion(RPC.java:422)
+	at org.apache.hadoop.hdfs.DFSClient.createNamenode(DFSClient.java:183)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:281)
+	at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:245)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:100)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1446)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1464)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:263)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:124)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:247)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:187)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterator.<init>(SequenceFileIterator.java:61)
+	at org.apache.mahout.common.iterator.sequencefile.SequenceFileIterable.iterator(SequenceFileIterable.java:61)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:511)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:481)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:457)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:583)
+	at org.apache.hadoop.ipc.Client$Connection.access$2200(Client.java:205)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1249)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1093)
+	... 45 more
+
+INFO  - [SOLR] - 2018-06-25 22:53:03.223; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/dothr/workspace/AgroBalsasUI
+INFO  - [SOLR] - 2018-06-25 22:53:03.224; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - [SOLR] - 2018-06-25 23:47:31.909; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=2098261983
+INFO  - [SOLR] - 2018-06-25 23:47:33.136; org.apache.solr.core.SolrCore; [coreModel]  CLOSING SolrCore org.apache.solr.core.SolrCore@5c52e935
+INFO  - [SOLR] - 2018-06-25 23:47:33.141; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - [SOLR] - 2018-06-25 23:47:33.141; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - [SOLR] - 2018-06-25 23:47:33.142; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - [SOLR] - 2018-06-25 23:47:33.143; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - [SOLR] - 2018-06-25 23:47:33.144; org.apache.solr.core.SolrCore; [coreModel] Closing main searcher on request.
+INFO  - [SOLR] - 2018-06-25 23:47:33.145; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - [SOLR] - 2018-06-25 23:47:33.145; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index;done=false>>]
+INFO  - [SOLR] - 2018-06-25 23:47:33.146; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data/index
+INFO  - [SOLR] - 2018-06-25 23:47:33.146; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/dothr/app/solr-4.3.0/example/solr/coreModel/data [CachedDir<<refCount=0;path=/home/dothr/app/solr-4.3.0/example/solr/coreModel/data;done=false>>]
+INFO  - [SOLR] - 2018-06-25 23:47:33.147; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/dothr/app/solr-4.3.0/example/solr/coreModel/data

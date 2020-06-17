@@ -1,0 +1,99 @@
+<div class="container-fluid" ng-controller="tipoTicketCtrl">
+  <h3>Tipo de Ticket</h3>
+  
+  <div class="col-md-10">
+  	<div class="alert alert-warning" role="alert" ng-show="zeroTipoSoporte">
+  		<b>Es requerido definir tipos de Soporte</b>
+  	</div>
+  	
+  	<div ng-hide="zeroTipoSoporte" >
+  		<div ng-show="tipoTickets.length>0">
+  			<table class="table table-striped" >
+  				<caption>Listado de Tipos de Soporte definidos</caption>
+  				<thead>
+  					<tr>
+  						<th><a href ng-click="orderProp = 'id'; descendent=!descendent">ID</a></th>
+						<th><a href ng-click="orderProp = 'idTipoSoporte'; descendent=!descendent">Tipo</a></th>
+						<th><a href ng-click="orderProp = 'etiqueta'; descendent=!descendent">Concepto</a></th>
+						<th><a href ng-click="orderProp = 'descripcion'; descendent=!descendent">Detalle</a></th>
+						<th>Opciones</th>
+					</tr>
+  				</thead>
+  				<tbody>
+  					<tr ng-repeat="tipotick in tipoTickets | filter:query | orderBy:orderTipSop:descendent">
+  						<td>{{tipotick.idTipoTicket}}</td>
+  						<td><span title="{{tipotick.idTipoSoporte}}">{{tipotick.lbTipoSoporte}}</span></td>
+						<td>{{tipotick.etiqueta}}</td>
+						<td>{{tipotick.descripcion}}</td>
+						<td>
+							<button type="button" class="btn btn-primary btn-sm" 
+									title="Editar" ng-click="setEdit(tipotick)">Editar</button>
+						</td>
+  					</tr>
+  				</tbody>
+  			</table>
+  		</div><!-- //Lista de TipoTicket -->
+  		
+  	</div>
+  </div>
+  
+  <div class="col-md-2">
+      <!--Sidebar content-->
+      <div class="panel panel-default" ng-hide="zeroTipoSoporte">
+			<div class="panel-body">		
+				<p ng-show="tipoTickets.length>0">
+					Filtrar: <input type="text" size="15" ng-model="query">
+				</p>		
+				<p>
+					<button class="btn btn-primary" id="addNew" 
+						ng-click="setAdd()">Agregar Nuevo</button>
+				</p>				
+			</div>
+		</div>
+   </div>
+  <!-- ############### MODALES ############ -->
+  <!--  *****   MODAL de UPDATE   ****** -->
+	<div class="modal fade" id="mdTicketTiype" role="dialog" data-backdrop="static" >
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title" style="text-align:center"><span id="mdTitle"></span>{{mdTitle}}</h4>
+	        </div>
+	        <div class="modal-body" style="text-align:center">
+	        
+	        	<div>
+					<b>Tipo Soporte:</b> <select ng-model="tipoTickTmp.idTipoSoporte">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cTipoSoporte" value="{{option.llave}}">{{option.valor}}</option>
+								 </select>
+					<b>Concepto:</b> 
+					<input type="text" ng-model="tipoTickTmp.etiqueta">
+					<br>
+					<b>Detalle:</b> 
+					<input type="text" ng-model="tipoTickTmp.descripcion"><small>Este campo es opcional</small>
+								
+					<br><small><b>{{modalMsg}}</b></small>
+				</div>
+				
+	        </div>
+	        <div class="modal-footer">
+	        	
+	        	<div class="alert alert-danger" role="alert" ng-show="confDel">			      	
+				      	<b>Esto eliminará el registro de {{tipoTickTmp.etiqueta}} del listado</b>
+				</div>
+	        	<span ng-hide="confDel">
+	        		<button type="button" ng-hide="tipoTickTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="creaTipoTicket()">Agregar</button>
+		        	<button type="button" ng-show="tipoTickTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="updTipoTicket()">Actualizar</button>
+		        	<button type="button" ng-show="tipoTickTmp.edit" ng-disabled="disableBtns" class="btn btn-Warning" ng-click="confirmDel()">Eliminar</button>
+	        	</span>
+	        	<span ng-show="confDel">
+	        		<button type="button" ng-disabled="disableBtns" class="btn btn-danger" ng-click="delTipoTicket()">Confirmar</button>
+	        	</span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        </div>
+	      </div>      
+	    </div>
+	</div>
+  <common-modal></common-modal>
+</div>

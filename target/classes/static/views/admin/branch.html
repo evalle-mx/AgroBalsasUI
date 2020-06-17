@@ -1,0 +1,80 @@
+
+<div class="container-fluid" ng-controller="sucursalCtrl">
+  <h3>Sucursales</h3>
+  
+	<table class="table table-hover">
+<!-- 		<caption>Valores en Estatus del Ticket</caption> -->
+		<thead>
+			<tr>
+				<th><span title="Id">Número</span></th>
+				<th>Nombre</th>
+				<th>Ubicación</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="sucursal in sucursales | orderBy:ordenSucursal:descendent">
+				<td>{{sucursal.idSucursal}}</td>
+				<td><span ng-click="setEdit(sucursal)">{{sucursal.nombre}}</span></td>
+				<td><span style="font-size: 0.8em;" ng-click="setEdit(sucursal)">{{sucursal.ubicacion}}</span></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="text-center">
+					<button type="button" class="btn btn-primary" ng-click="setAdd()">Agregar Nueva</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<!-- ############### MODALES ############ -->
+	<!-- *****    MODAL - Editar Registro Sucursal  ***** -->
+	<div class="modal fade" id="mdBranch" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header text-center">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Sucursal <b>{{branchTmp.nombre}}</b></h4>
+	        </div>
+	        <div class="modal-body">
+	        	<div>
+					<table class="table">
+				    	<caption>Editar Datos de Sucursal</caption>
+				      	
+						<tbody>
+							<tr>
+								<td><b>Nombre</b></td>
+								<td><input type="text" ng-model="branchTmp.nombre"/> </td>
+							</tr>
+							<tr>
+								<td><b>Ubicación</b></td>
+								<td><textarea rows="5" cols="25" ng-model="branchTmp.ubicacion"></textarea>
+								</td>
+							</tr>
+						</tbody>
+				    </table>
+				</div>
+			    <div>			      	
+			      	<span>{{modalMsg}}</span>
+			    </div>
+	        	
+	        </div>
+	        <div class="modal-footer">
+	        	<div class="alert alert-danger" role="alert" ng-show="confDel">			      	
+				      	<b>Esto eliminará el los datos de la sucursal {{branchTmp.nombre}}</b>
+				</div>
+	        	<span ng-hide="confDel">
+	        		<button type="button" ng-hide="branchTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="createBranch()">Agregar</button>
+		        	<button type="button" ng-show="branchTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="updBranch()">Actualizar</button>
+		        	<button type="button" ng-show="branchTmp.edit" ng-disabled="disableBtns" class="btn btn-Warning" ng-click="confirmDel()">Eliminar</button>
+	        	</span>
+	        	<span ng-show="confDel">
+	        		<button type="button" ng-show="branchTmp.edit" ng-disabled="disableBtns" class="btn btn-danger" ng-click="delBranch()">Confirmar</button>
+	        	</span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        </div>
+	      </div>      
+	    </div>
+	  </div>
+	  
+	<common-modal></common-modal>
+</div>

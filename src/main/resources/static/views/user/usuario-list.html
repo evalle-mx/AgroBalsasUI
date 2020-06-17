@@ -1,0 +1,156 @@
+<div class="container-fluid" ng-controller="userListCtrl">
+  <div class="row">
+    <div class="col-md-10">
+      <!--Body content-->
+      <div ng-show="usuarios.length>0">
+      	<table class="table table-striped" >
+	      	<caption>Usuario Disponibles</caption>
+	      	<thead>
+				<tr>
+					<th><a href ng-click="orderProp = 'id'; descendent=!descendent">ID</a></th>
+					<th><a href ng-click="orderProp = 'username'; descendent=!descendent">UserName</a></th>
+					<th><a href ng-click="orderProp = 'nombre'; descendent=!descendent">Nombre</a></th>
+					<th><a href ng-click="orderProp = 'apellidos'; descendent=!descendent">Apellido</a></th>
+					<th><a href ng-click="orderProp = 'puesto'; descendent=!descendent">Puesto</a></th>
+					<th><a href ng-click="orderProp = 'activo'; descendent=!descendent">Activo</a></th>
+					<th>Editar</th>
+				</tr>
+			</thead>
+				<tbody>
+					<tr ng-repeat="user in usuarios | filter:query | orderBy:orderProp:descendent">
+						<td>{{user.idUsuario}}</td>
+						<td>{{user.username}}</td>
+						<td>{{user.nombre}}</td>
+						<td>{{user.apellidos}}</td>
+						<td>{{user.puesto}}</td>
+						<td><i ng-show="user.activo" title="Activo" class="glyphicon glyphicon-ok"></i>
+							<i ng-hide="user.activo" title="Inactivo" class="glyphicon glyphicon-remove"></i></td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm" 
+							title="Editar" ng-click="setEdit(user)">Editar</button>
+						</td>
+					</tr>
+				</tbody>
+	      </table>
+      </div>
+      
+      <div class="alert alert-info" role="alert" ng-hide="usuarios.length>0">
+      		<b ng-hide="searched">Realice una busqueda</b>
+      		<b ng-show="searched">No existen resultados</b>
+	  </div>
+      
+      
+      
+
+    </div>
+    
+    
+    <div class="col-md-2">
+      <!--Sidebar content-->
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Busqueda
+			</div>
+			<div class="panel-body">
+				<p ng-show="usuarios.length>0">
+					Filtrar: <input type="text" size="15" ng-model="query">
+				</p>
+				<form ><!-- class="form-horizontal" -->
+  					<div class="form-group">
+  						<label>Sucursal</label>
+						<select class="form-control" ng-model="search.idSucursal">
+									<option value="-1">-Todos-</option>
+									<option ng-repeat="option in cSucursal" value="{{option.llave}}">{{option.valor}}</option>
+						</select>
+  					</div>
+  					
+  					<div class="form-group">
+  						<label>Rol</label>
+						<select class="form-control" ng-model="search.idRol">
+									<option value="-1">-Todos-</option>
+									<option ng-repeat="option in cRol" value="{{option.llave}}">{{option.valor}}</option>
+						</select>
+  					</div>
+  					
+  					<div class="form-group">
+  						<button class="btn btn-default" id="find" 
+						ng-click="loadUsuarios()">Buscar</button>
+  					</div>
+  				</form>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				
+				<p>
+					<button class="btn btn-primary" id="addNew" 
+						ng-click="setAdd()">Agregar Nuevo</button>
+				</p>				
+			</div>
+		</div>
+      
+    </div>
+  </div>
+  
+  <!-- *****    MODAL - Editar/Crear Usuario  ***** -->
+	<div class="modal fade" id="mdUsuario" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header text-center">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Usuario</h4>
+	        </div>
+	        <div class="modal-body">
+				
+				<table class="table table-striped" >
+			      	<caption><span ng-show="userTmp.edit">Editar Info</span><span ng-hide="userTmp.edit">Agregar nuevo</span> </caption>
+					<tbody>
+						<tr><td>Nombre</td><td><input type="text" ng-model="userTmp.nombre"></td></tr>
+						<tr><td>Apellidos</td><td><input type="text" ng-model="userTmp.apellidos"></td></tr>
+						<tr><td>userName</td><td><input type="text" ng-model="userTmp.username"></td></tr>
+						<tr><td>Email</td><td><input type="email" ng-model="userTmp.email"></td></tr>
+						<tr><td>Puesto</td><td><input type="text" ng-model="userTmp.puesto"></td></tr>
+						
+						<tr><td>Rol</td><td>
+								<select ng-model="userTmp.idRol">
+											<option value="-1">Seleccione</option>
+											<option ng-repeat="option in cRol" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>
+						<tr><td>Sucursal</td>
+							<td>							
+								<select ng-model="userTmp.idSucursal">
+											<option value="-1">Seleccione</option>
+											<option ng-repeat="option in cSucursal" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+						</td></tr>
+						<tr><td>Teléfono:</td><td><input type="text" ng-model="userTmp.contacto"></td></tr>
+					</tbody>
+			      </table>
+			      <!-- <div class="alert alert-danger" role="alert" ng-show="bErrorMsg">			      	
+			      	<span>{{modalMsg}}</span>
+			      </div>-->
+	        </div>
+	        <div class="modal-footer">
+	        	<div class="alert alert-danger" role="alert" ng-show="confDel">			      	
+				      	<b>Esto eliminará el registro de {{userTmp.username}} del listado</b>
+				</div>
+	        	<span ng-hide="confDel">
+	        		<button type="button" ng-hide="userTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="creaUsuario()">Agregar</button>
+		        	<button type="button" ng-show="userTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="updUsuario()">Actualizar</button>
+		        	<button type="button" ng-show="userTmp.edit" ng-disabled="disableBtns" class="btn btn-Warning" ng-click="confirmDel()">Eliminar</button>
+	        	</span>
+	        	<span ng-show="confDel">
+	        		<button type="button" ng-disabled="disableBtns" class="btn btn-danger" ng-click="delUsuario()">Confirmar</button>
+	        	</span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	  </div> 
+	  
+	  <common-modal></common-modal>
+	  
+</div>

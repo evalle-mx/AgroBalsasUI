@@ -1,0 +1,16 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<html>
+
+<head>
+<title>Agrobalsas Ticketing</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="webjars/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js" rel="stylesheet"> -->
+<!-- Hoja de estilos propietaria -->
+<link rel="stylesheet" href="css/app.css">
+
+</head>
+
+

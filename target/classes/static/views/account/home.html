@@ -1,0 +1,96 @@
+<div class="container-fluid" ng-controller="homeaccountCtrl">
+	<!-- <ul class="nav nav-tabs">
+		<li role="presentation" class="active"><a href="#">Mis Datos</a></li>
+		<li role="presentation"><a href="#">Cambio Contraseña</a></li>
+	</ul>-->
+	
+	
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs">
+			<li ng-class="getTabClass(1)" ng-click="setActiveTab(1)"><a href="/#profile-tab" data-toggle="tab">Mis Datos</a></li>
+			<li ng-class="getTabClass(2)" ng-click="setActiveTab(2)"><a href="/#pwd-tab" data-toggle="tab">Cambio de Contraseña</a></li>
+		</ul>
+		<div class="tab-content">
+			<div ng-class="getTabPaneClass(1)" id="profile-tab">
+				<div class="col-sm-6">
+			    	<table class="table table-hover table-responsive">
+						<!-- <caption>TITULO</caption>
+						<thead>
+							<tr>
+								<th><span>Número</span></th>
+								<th>Valor</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>-->
+						<tbody>							
+							<tr>
+								<td><b>Nombre</b></td><td><input type="text" ng-model="usuario.nombre"></td>
+							</tr>
+							<tr>
+								<td><b>Apellidos</b></td><td><input type="text" ng-model="usuario.apellidos"></td>
+							</tr>
+							<tr>
+								<td><b>Email</b></td><td><input type="text" ng-model="usuario.email"></td>
+							</tr>
+							<tr>
+								<td><b>UserName</b></td><td>{{usuario.username}}
+									<!-- <input type="text" ng-model="usuario.username"> --></td>
+							</tr>
+							<!-- 
+							<tr>
+								<td>userAlias</td><td><input type="text" ng-model="usuario.useralias"></td>
+							</tr> -->
+							<tr>
+								<td><b>Rol</b></td><td>{{usuario.lbRol}}</td>
+							</tr>
+							<tr>
+								<td><b>Sucursal</b></td><td>{{usuario.lbSucursal}}</td>
+							</tr>
+							
+							<tr>
+								<td align="center" colspan="2">
+									<button type="button" class="btn btn-success"
+										 ng-click="updateInfo()">Actualizar</button></td>
+							</tr>
+							
+						</tbody>
+				    </table>
+				</div>
+			</div>
+			<div ng-class="getTabPaneClass(2)" id="pwd-tab">
+				<div class="col-sm-6">
+					<table class="table table-hover table-responsive">
+						<caption>Cambio de Contraseña</caption>
+						<!-- <thead>
+							<tr>
+								<th><span>Número</span></th>
+								<th>Valor</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>-->
+						<tbody>							
+							<tr>
+								<td><b>Contraseña Actual</b></td><td><input type="text" ng-model="pwd.actual"></td>
+							</tr>						
+							<tr>
+								<td><b>Nueva Contraseña</b></td><td><input type="text" ng-model="pwd.nueva"></td>
+							</tr>						
+							<tr>
+								<td><b>Repita nueva Contraseña</b></td><td><input type="text" ng-model="pwd.nuevabis"></td>
+							</tr><tr>
+								<td align="center" colspan="2">
+									<button type="button" class="btn btn-success"
+										 ng-click="updatePwd()">Cambiar</button></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="alert alert-danger" role="alert" ng-show="bErrUpd">			      	
+				      	<b>{{errUpd}}</b>
+					</div>
+				</div>
+			</div>
+		</div><!-- //tab-content -->
+	</div><!--  //tabbable tabs-left -->
+	
+	<common-modal></common-modal>
+</div>

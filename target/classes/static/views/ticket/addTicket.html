@@ -1,0 +1,66 @@
+<div class="container-fluid" ng-controller="ticketSingleCtrl">
+	
+	<table class="table table-striped" ng-show="showForm" >
+		<caption>Levantar nuevo Ticket</caption>
+		<tbody>
+		<tr>
+			<td>Tipo </td>
+			<td><select ng-model="tmpTicket.idTipoTicket">
+				<option value="1">Alta de inventario</option>
+				<option value="2">Alta de cliente </option>
+				<option value="3">Alta de cuenta de mayor</option>
+				<option value="4">Alta de almacén</option>
+				<option value="5">Lista de precios</option>
+				<option value="6">Factura electrónica</option>
+				<option value="7">Nota de crédito </option>
+				<option value="8">Permisos de usuario</option>
+				<option value="9">Reporte  especial sap one</option>
+				<option value="10">Otros</option>
+				<option value="11">Red</option>
+				<option value="12">Impresora</option>
+				<option value="13">Internet</option>
+				<option value="14">Equípo de Computo</option>
+				<option value="15">Telefonía</option>
+				<option value="16">Sistemas ABACO</option>
+				<option value="17">Correo electrónico</option>
+				<option value="18">VPN</option>
+				<option value="19">Otro</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Descripción</td>
+			<td>
+				<textarea rows="4" cols="25" ng-model="tmpTicket.descripcion"></textarea>
+			</td>
+		</tr>
+		<!-- <tr>
+			<td>Comentario</td>
+			<td><input type="text" ng-model="tmpTicket.comentario"></td>
+		</tr> -->
+		<tr>
+			<td colspan="2">
+				<button type="button" class="btn btn-success" ng-hide="tmpTicket.idTicket" ng-click="saveTicket()">Agregar</button>
+				&nbsp;
+				<a href="#/tickets" class="btn btn-primary"> Ver Mis Tickets</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	
+	<div class="alert alert-success" role="alert" ng-show="successAdd">
+		<span >{{mainMsg}}</span>
+	</div>
+	
+	<div class="alert alert-danger" role="alert" ng-show="errorAdd">
+		<span >{{mainMsg}}</span>
+	</div>
+	
+	<div class="text-center">
+		<button type="button" class="btn btn-success" ng-show="successAdd" ng-click="setAdd()">Levantar otro Ticket</button>
+	</div>
+	
+	
+	  
+	  <common-modal></common-modal>
+</div>

@@ -1,0 +1,219 @@
+<div class="container-fluid" ng-controller="catalogoCtrl">
+  <h3>Catálogos</h3>
+  
+  	<div>
+  		<div class="panel panel-default">
+	  	  <div class="panel-heading">
+		    Los siguientes son los Catálogos de Funcionamiento del sistema
+		  </div>
+		  <div class="panel-body">
+		    
+		    <div class="tabbable tabs-left">
+			      <ul class="nav nav-tabs">
+			         <li ng-class="getTabClass(1)" ng-click="setActiveTab(1)"><a href="/#estatus" data-toggle="tab">Estatus</a></li>
+			         <li ng-class="getTabClass(2)" ng-click="setActiveTab(2)"><a href="/#area" data-toggle="tab">Área</a></li>
+			         <li ng-class="getTabClass(3)" ng-click="setActiveTab(3)"><a href="/#rol" data-toggle="tab">Rol</a></li>
+			         <li ng-class="getTabClass(4)" ng-click="setActiveTab(4)"><a href="/#tipoSoporte" data-toggle="tab">Tipo Soporte</a></li>
+			      </ul>
+			      <div class="tab-content">
+			        <div ng-class="getTabPaneClass(1)" id="estatus">
+			        	<div class="col-sm-6">
+			        		<table class="table table-hover">
+						    	<caption>Valores en Estatus del Ticket</caption>
+						      	<thead>
+									<tr>
+										<th><span title="llave">Número</span></th>
+										<th>Valor</th>
+										<th>Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="reg in cEstatus | orderBy:orderCatalogo:descendent">
+										<td>{{reg.llave}}</td>
+										<td><span ng-click="setEdit(reg,3)">{{reg.valor}}</span></td>
+										<td><span ng-click="setEdit(reg,3)">{{reg.descripcion}}</span></td>
+									</tr>
+									<tr><td colspan="3">
+										<button type="button" class="btn btn-primary" ng-click="setAdd(3)">Agregar</button></td>
+									</tr>
+								</tbody>
+						    </table>
+			        	</div>
+					    
+			         </div>       
+			        
+			        <div ng-class="getTabPaneClass(2)" id="area">     
+			          
+			          <div class="col-sm-6">
+					  	<table class="table table-hover">
+					    	<caption>Valores en Área</caption>
+					      	<thead>
+								<tr>
+									<th><span title="llave">Número</span></th>
+									<th>Valor</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="reg in cArea | orderBy:orderCatalogo:descendent">
+									<td>{{reg.llave}}</td>
+									<td><span ng-click="setEdit(reg,1)">{{reg.valor}}</span></td>
+									<td><span ng-click="setEdit(reg,1)">{{reg.descripcion}}</span></td>
+								</tr>
+								<tr><td colspan="3">
+									<button type="button" class="btn btn-primary" ng-click="setAdd(1)">Agregar</button></td>
+								</tr>
+							</tbody>
+					    </table>
+					   </div>
+			        </div>
+			        
+			        <div ng-class="getTabPaneClass(3)" id="rol">     
+			          
+			          <div class="col-sm-6">
+					  	<table class="table table-hover">
+					    	<caption>Valores en Rol</caption>
+					      	<thead>
+								<tr>
+									<th><span title="llave">Número</span></th>
+									<th>Valor</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="reg in cRol | orderBy:orderCatalogo:descendent">
+									<td>{{reg.llave}}</td>
+									<td><span ng-click="setEdit(reg,2)">{{reg.valor}}</span></td>
+									<td><span ng-click="setEdit(reg,2)">{{reg.descripcion}}</span></td>
+								</tr>
+								<tr><td colspan="3">
+									<button type="button" class="btn btn-primary" ng-click="setAdd(2)">Agregar</button></td>
+								</tr>
+							</tbody>
+					    </table>
+					  </div>
+			        </div>
+			        
+			        <div ng-class="getTabPaneClass(4)" id="tipoSoporte">     
+			          
+			          <div class="col-sm-6">
+					  	<table class="table table-hover">
+					    	<caption>Valores en Tipo de Soporte</caption>
+					      	<thead>
+								<tr>
+									<th><span title="llave">Número</span></th>
+									<th>Valor</th>
+									<th>Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="reg in cTSoporte | orderBy:orderCatalogo:descendent">
+									<td>{{reg.llave}}</td>
+									<td><span ng-click="setEdit(reg,4)">{{reg.valor}}</span></td>
+									<td><span ng-click="setEdit(reg,4)">{{reg.descripcion}}</span></td>
+								</tr>
+								<tr><td colspan="3">
+									<button type="button" class="btn btn-primary" ng-click="setAdd(4)">Agregar</button></td>
+								</tr>
+							</tbody>
+					    </table>
+					  </div>
+			        </div>      
+			      
+			      </div><!-- //tab-content -->
+		    </div><!--  //tabbable tabs-left -->
+		    
+		    
+		  </div>
+		  
+		</div>
+  	</div>
+  	
+	<hr>
+	<div>
+		
+	</div>
+	
+	
+	<!-- ############### MODALES ############ -->
+	<!-- *****    MODAL - Editar Registro Catalogo  ***** -->
+	<div class="modal fade" id="mdCat" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header text-center">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">{{regTmp.lbCat}}</h4>
+	        </div>
+	        <div class="modal-body">
+				<div ng-hide="regTmp.edit">
+					<table class="table">
+				    	<caption>Crear nuevo registro en {{regTmp.lbCat}}</caption>
+				      	<thead>
+							<tr>
+								<th>Campo</th>
+								<th>Valor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><b>Valor</b></td>
+								<td><input type="text" ng-model="regTmp.valor"/> </td>
+							</tr>
+							<tr>
+								<td><b>Descripción</b></td>
+								<td><input type="text" ng-model="regTmp.descripcion"/> </td>
+							</tr>
+						</tbody>
+				    </table>
+				</div>
+				<div ng-show="regTmp.edit">
+					<table class="table">
+				    	<caption>Editar valores para {{regTmp.lbCat}}</caption>
+				      	<thead>
+							<tr>
+								<th>Campo</th>
+								<th>Valor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><b>Número</b></td>
+								<td>{{regTmp.llave}}</td>
+							</tr>
+							<tr>
+								<td><b>Valor</b></td>
+								<td><input type="text" ng-model="regTmp.valor"/> </td>
+							</tr>
+							<tr>
+								<td><b>Descripción</b></td>
+								<td><input type="text" ng-model="regTmp.descripcion"/> </td>
+							</tr>
+						</tbody>
+				    </table>
+				</div>
+			    <div>			      	
+			      	<span>{{modalMsg}}</span>
+			    </div>
+				
+	        </div>
+	        <div class="modal-footer">
+	        	<div class="alert alert-danger" role="alert" ng-show="confDel">			      	
+				      	<b>Esto eliminará el registro del catálogo {{regTmp.lbCat}}</b>
+				</div>
+	        	<span ng-hide="confDel">
+	        		<button type="button" ng-hide="regTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="addCat()">Agregar</button>
+		        	<button type="button" ng-show="regTmp.edit" ng-disabled="disableBtns" class="btn btn-success" ng-click="updCat()">Actualizar</button>
+		        	<button type="button" ng-show="regTmp.edit" ng-disabled="disableBtns" class="btn btn-Warning" ng-click="confirmCat()">Eliminar</button>
+	        	</span>
+	        	<span ng-show="confDel">
+	        		<button type="button" ng-show="regTmp.edit" ng-disabled="disableBtns" class="btn btn-danger" ng-click="deleteCat()">Confirmar</button>
+	        	</span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        </div>
+	      </div>      
+	    </div>
+	  </div>
+		
+	<common-modal></common-modal>
+</div>

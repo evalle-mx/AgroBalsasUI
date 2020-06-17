@@ -1,0 +1,176 @@
+<div class="container-fluid" ng-controller="tecnicoCtrl">
+  <h3>Técnicos</h3>
+  
+  <div class="col-md-10">
+  		<div class="alert alert-warning" role="alert" ng-show="zeroSucursal">
+  			<b>Es requerido crear Sucursales</b>
+  		</div>
+  		
+  		<div class="alert alert-warning" role="alert" ng-show="zeroUsuario">
+  			<b>Es requerido crear Usuarios para asignar</b>
+  		</div>
+  		
+  		<div ng-hide="zeroUsuario || zeroSucursal" >
+  			
+  			<div ng-show="tecnicos.length>0">
+		      	<table class="table table-striped" >
+			      	<caption>Técnicos Disponibles</caption>
+			      	<thead>
+						<tr>
+							<th><a href ng-click="orderProp = 'id'; descendent=!descendent">ID</a></th>
+							<th><a href ng-click="orderProp = 'idArea'; descendent=!descendent">Area</a></th>
+							<th><a href ng-click="orderProp = 'idSucursal'; descendent=!descendent">Sucursal</a></th>
+							<th><a href ng-click="orderProp = 'nombrecompleto'; descendent=!descendent">Nombre</a></th>
+							<th>Editar</th>
+						</tr>
+					</thead>
+						<tbody>
+							<tr ng-repeat="tecnico in tecnicos | filter:query | orderBy:orderTecn:descendent">
+								<td>{{tecnico.idTecnicoAtencion}}</td>
+								<td><span title="{{tecnico.idArea}}">{{tecnico.lbArea}}</span></td>
+								<td><span title="{{tecnico.idSucursal}}">{{tecnico.lbSucursal}}</span></td>
+								<td>{{tecnico.nombrecompleto}}</td>
+								<td>
+									<button type="button" class="btn btn-info btn-sm" 
+									title="Editar" ng-click="setEdit(tecnico)">Editar</button>
+									
+									<!-- <button type="button" class="btn btn-danger btn-sm" 
+									title="Editar" ng-click="setTecDel(tecnico)">Eliminar</button>  -->
+								</td>
+							</tr>
+						</tbody>
+			      </table>
+		      </div><!-- //Lista de Técnicos -->
+		      
+		      <div class="alert alert-info" role="alert" ng-hide="tecnicos.length>0" >
+		      	<b>Actualmente no tiene registrado ningún técnico</b>
+		      </div>
+  		</div>
+  </div>
+  
+   <div class="col-md-2">
+      <!--Sidebar content-->
+      <div class="panel panel-default" ng-hide="zeroUsuario || zeroSucursal">
+			<div class="panel-body">				
+				<p>
+					<button class="btn btn-primary" id="addNew" 
+						ng-click="setAdd()">Agregar Nuevo</button>
+				</p>				
+			</div>
+		</div>
+   </div>
+  
+  
+  <!-- ############### MODALES ############ -->
+  <!-- *****    MODAL - Busqueda de Usuario   *****  -->
+  <div class="modal fade" id="mdAdd" role="dialog" data-backdrop="static" >
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title" style="text-align:center"><span id="mdTitle"></span>{{mdTitle}}</h4>
+	        </div>
+	        <div class="modal-body" style="text-align:center">
+				<div id="lsUsuario">
+					<b>Buscar Usuarios para asignar</b><br>
+					
+					<b>Sucursal:</b>
+					<!-- <input type="text" ng-model="fIdSucursal"> -->
+					<select ng-model="fIdSucursal">
+						<option value="-1">Todas</option>
+						<option ng-repeat="option in cSucursal" value="{{option.llave}}">{{option.valor}}</option>
+					</select>
+					&nbsp;
+					<b>Rol:</b>
+					<!-- <input type="text" ng-model="fIdRol"> -->
+					<select ng-model="fIdRol">
+						<option value="-1">Todos</option>
+						<option ng-repeat="option in cRol" value="{{option.llave}}">{{option.valor}}</option>
+					</select>
+					&nbsp;
+					<br><br>
+					<button type="button" class="btn" ng-click="search()">Buscar</button>
+					
+					<hr>
+					<div ng-show="usuarios.length>0" style="text-align:left;">
+						<div ng-repeat="user in usuarios">
+							<input type="radio" name="selUsuario" ng-model="selUsuario" value="{{user.idUsuario}}" ng-click="setUsuario(user)">
+							&nbsp;
+							<b>{{user.nombre}} {{user.apellidos}}</b>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div ng-show="tecnicoTmp.idUsuario" id="tecnSel">
+					<button type="button" class="btn" ng-click="toggleSearch()">Buscar Otro</button><br>
+					<b>Nombre:</b> <span title="tecnicoTmp.idUsuario" >{{tecnicoTmp.nombrecompleto}}</span> 
+					<br>
+					<b>Área de Atención:</b> <select ng-model="tecnicoTmp.idArea" cArea>
+									<option value="-1">-Seleccione-</option>
+									<option ng-repeat="option in cArea" value="{{option.llave}}">{{option.valor}}</option>
+								 </select>
+					<b>Sucursal de Atención:</b> <select ng-model="tecnicoTmp.idSucursal">
+									<option value="-1">-Seleccione-</option>
+									<option ng-repeat="option in cSucursal" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+				</div>
+	        </div>
+	        <div class="modal-footer">
+	        	<small><b>{{modalMsg}}</b></small>
+	        	<button ng-show="tecnicoTmp.idUsuario" class="btn btn-primary" ng-click="createTecn()" >Confirmar</button>
+	        	<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	</div>
+	
+	<!--  *****   MODAL de UPDATE   ****** -->
+	<div class="modal fade" id="mdUpd" role="dialog" data-backdrop="static" >
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title" style="text-align:center"><span id="mdTitle"></span>{{mdTitle}}</h4>
+	        </div>
+	        <div class="modal-body" style="text-align:center">
+	        
+	        	<div>
+					
+					<b>Nombre:</b> <span title="tecnicoTmp.idTecnicoAtencion" >{{tecnicoTmp.nombrecompleto}}</span> 
+					<br>
+					<b>Area:</b> <select ng-model="tecnicoTmp.idArea">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cArea" value="{{option.llave}}">{{option.valor}}</option>
+								 </select>
+					<b>Sucursal:</b> <select ng-model="tecnicoTmp.idSucursal">
+									<option value="-1">Seleccione</option>
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cSucursal" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+								
+						<br><small><b>{{modalMsg}}</b></small>
+				</div>
+				
+	        </div>
+	        <div class="modal-footer">
+	        	
+	        	<div class="alert alert-danger" role="alert" ng-show="confDel">			      	
+				      	<b>Esto eliminará el registro de {{tecnicoTmp.nombrecompleto}} del listado de Técnicos</b>
+				</div>
+	        	<span ng-hide="confDel">
+		        	<button type="button" ng-disabled="disableBtns" class="btn btn-success" ng-click="updateTecn()">Actualizar</button>
+		        	<button type="button" ng-disabled="disableBtns" class="btn btn-Warning" ng-click="confirmDel()">Eliminar</button>
+	        	</span>
+	        	<span ng-show="confDel">
+	        		<button type="button" ng-disabled="disableBtns" class="btn btn-danger" ng-click="deleteTecn()">Confirmar</button>
+	        	</span>
+	        	<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	</div>
+  
+  <common-modal></common-modal>
+</div>

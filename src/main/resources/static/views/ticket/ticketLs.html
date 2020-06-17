@@ -1,0 +1,182 @@
+<div class="container-fluid" ng-controller="ticketListCtrl">
+	<!--  Vista de Administrador -->
+	<div class="row">
+		<div class="col-md-10">
+		
+			<div class="panel panel-default">
+			 <!-- <div class="panel-heading">Filtros</div>  -->
+			  <div class="panel-body">
+			    <b>Tipo: </b>
+			    <select ng-model="searchTick.idTipoTicket">
+			    	<option value="-1">-Todos-</option>
+					<option ng-repeat="option in cTipoTicket" value="{{option.llave}}">{{option.valor}}</option>
+				</select>
+				&nbsp;
+				<b>Estatus: </b>
+				<select ng-model="searchTick.idTipoEstatus">
+					<option value="-1">-Todos-</option>
+					<option ng-repeat="option in cEstatus" value="{{option.llave}}">{{option.valor}}</option>
+				</select>
+				&nbsp;
+				<b>Técnico: </b>
+				<select ng-model="searchTick.idTecnicoAtencion">
+					<option value="-1">-Todos-</option>
+					<option ng-repeat="option in cTecnico" value="{{option.llave}}">{{option.valor}}</option>
+				</select>
+				&nbsp;
+				&nbsp;
+				<button type="button" class="btn btn-default" 
+				ng-click="loadTickets()">Buscar</button>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+  <div class="row">
+    <div class="col-md-10">   
+      <table class="table table-striped">
+      	<caption>Solicitudes Levantadas</caption>
+      	<thead>
+			<tr>
+				<th><a href ng-click="orderProp = 'id'; descendent=!descendent">ID</a></th>
+				<th><a href ng-click="orderProp = 'idUsuario'; descendent=!descendent">Usuario</a></th>
+				<th><a href ng-click="orderProp = 'idTipoTicket'; descendent=!descendent">Tipo</a></th>
+				<th><a href ng-click="orderProp = 'idTipoEstatus'; descendent=!descendent">Estatus</a></th>
+				<th><a href ng-click="orderProp = 'idTecnicoAtencion'; descendent=!descendent">Tecnico</a></th>
+				<th><a href ng-click="orderProp = 'fechaAlta'; descendent=!descendent">Fecha Alta</a></th>
+				<th><a href >Descripción</a></th>
+				<th>Editar</th>
+			</tr>
+		</thead>
+			<tbody>
+				<tr ng-show="tickets.length==0">
+					<td colspan="5"><div class="alert alert-warning" role="alert">
+						<b>No hay solicitudes levantadas</b>
+					</div></td>
+					</tr>
+				<tr ng-repeat="solicitud in tickets | filter:query | orderBy:orderProp:descendent">
+					<td>{{solicitud.idTicket}}</td>
+					<td>{{solicitud.idUsuario}}</td>
+					<td><span title="{{solicitud.idTipoTicket}}">{{solicitud.lbTipoTicket}}</span></td>
+					<td><span title="{{solicitud.idTipoEstatus}}">{{solicitud.lbEstatus}}</span></td>
+					<td><span title="{{solicitud.idTecnicoAtencion}}">{{solicitud.lbTecnicoAtencion | emptyTecn}}</span></td>
+					<td>{{solicitud.fAlta | date:"MM/dd/yyyy" }}</td>
+					<td><small>{{solicitud.descripcion}}</small></td>
+					<td><button type="button" class="btn btn-success" ng-click="setMdTicket(solicitud)">Editar</button></td>
+				</tr>
+			</tbody>
+      </table>
+    </div>
+    
+    
+    <div class="col-md-2">
+      <!--Sidebar content-->
+	
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p>
+					Buscar: <input type="text" size="15" ng-model="query">
+				</p>
+				<p>
+					<button class="btn btn-primary" id="edTicket" 
+						ng-click="setMdTicket()">Agregar</button>
+				</p>				
+			</div>
+		</div>
+      
+    </div>
+  </div>
+  
+  <!-- *****    MODAL - Editar Ticket  ***** -->
+	<div class="modal fade" id="mdTicket" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header text-center">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Ticket</h4>
+	        </div>
+	        <div class="modal-body">
+			      
+			      <table ng-hide="tmpTicket.idTicket" class="table table-striped" >
+			      	<caption>Levantar Solicitud</span>
+			      	</caption>
+					<tbody>
+						<tr><td>Tipo </td>
+							<td>
+								<select ng-model="tmpTicket.idTipoTicket">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cTipoTicket" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>
+						<tr class="hidden"><td>Estatus</td>
+							<td>
+								<select ng-model="tmpTicket.idTipoEstatus">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cEstatus" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>						
+						<tr><td>Descripción</td><td>
+							<textarea rows="4" cols="25" ng-model="tmpTicket.descripcion"></textarea>
+						</td></tr>
+					</tbody>
+			      </table>
+			      
+			      <table ng-show="tmpTicket.idTicket" class="table table-striped" >
+			      	<caption> Editar Solicitud</span>
+			      	</caption>
+					<tbody>
+						<tr><td>Alta</td><td>{{tmpTicket.fechaAlta}}</td></tr>
+						<tr><td>Tipo </td>
+							<td>
+								<select ng-model="tmpTicket.idTipoTicket">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cTipoTicket" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>
+						<tr><td>Estatus</td>
+							<td>
+								<select ng-model="tmpTicket.idTipoEstatus">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cEstatus" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>
+						<tr>
+							<td>Asignar a</td>
+							<td>
+								<select ng-model="tmpTicket.idTecnicoAtencion">
+									<option value="-1">Seleccione</option>
+									<option ng-repeat="option in cTecnico" value="{{option.llave}}">{{option.valor}}</option>
+								</select>
+							</td></tr>
+						<tr><td>Descripción</td><td>
+							<textarea rows="4" cols="25" ng-model="tmpTicket.descripcion"></textarea>
+						</td></tr>
+						<tr><td>Comentario</td><td><input type="text" ng-model="tmpTicket.comentario"></td></tr>
+					</tbody>
+			      </table>
+			      <div>
+			      	<span class="{{mdClass}}">{{modalMsg}}</span>
+			      </div>
+				
+	        </div>
+	        <div class="modal-footer">
+	        	<div ng-show="showConfDiv">
+	        		<b>¿Desea eliminar este Ticket?</b>
+	        		<button type="button" class="btn btn-warning" ng-click="deleteTicket()">Confirmar</button>
+		        	<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+	        	</div>
+	        	<span ng-hide="showConfDiv">
+		        	<button type="button" class="btn btn-success" ng-hide="tmpTicket.idTicket" ng-click="saveTicket()">Agregar</button>
+		        	<button type="button" class="btn btn-success" ng-show="tmpTicket.idTicket" ng-click="updateTicket()">Actualizar</button>
+		        	<button type="button" class="btn btn-danger" ng-show="tmpTicket.idTicket" ng-click="confirmDelete()">Eliminar</button>
+		        </span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	  </div> 
+  
+	  
+	  <common-modal></common-modal>
+</div>

@@ -1,0 +1,175 @@
+<div class="container-fluid" ng-controller="ticketListCtrl">
+	<!--  VIsta de Usuario -->
+  <div class="row">
+    <div class="col-md-10">
+      <!--Body content-->
+      
+      <table class="table table-striped">
+      	<caption>Solicitudes Levantadas</caption>
+      	<thead>
+			<tr>
+				<th><a href ng-click="orderProp = 'idTipoTicket'; descendent=!descendent">Tipo</a></th>
+				<th><a href ng-click="orderProp = 'idTipoEstatus'; descendent=!descendent">Estatus</a></th>
+				<th><a href ng-click="orderProp = 'idTecnicoAtencion'; descendent=!descendent">Tecnico</a></th>
+				<th><a href ng-click="orderProp = 'fechaAlta'; descendent=!descendent">Fecha Alta</a></th>
+				<th><a href >Descripción</a></th>
+				<!-- <th>Calificar</th> -->
+			</tr>
+		</thead>
+			<tbody>
+				<tr ng-show="tickets.length==0">
+					<td colspan="5"><div class="alert alert-warning" role="alert">
+						<b>No hay solicitudes levantadas</b>
+					</div></td>
+					</tr>
+				<tr ng-repeat="solicitud in tickets | filter:query | orderBy:orderProp:descendent">
+					<td><span title="{{solicitud.idTipoTicket}}">{{solicitud.lbTipoTicket}}</span></td>
+					<td><span title="{{solicitud.idTipoEstatus}}">{{solicitud.lbEstatus}}</span></td>
+					<td><span title="{{solicitud.idTecnicoAtencion}}">{{solicitud.lbTecnicoAtencion | emptyTecn}}</span></td>
+					<td>{{solicitud.fAlta | date:"MM/dd/yyyy" }}</td>
+					<td><small>{{solicitud.descripcion}}</small></td>
+					<!-- <td> </td> -->
+				</tr>
+			</tbody>
+      </table>
+      
+      
+
+    </div>
+    
+    
+    <div class="col-md-2">
+      <!--Sidebar content-->
+	
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p>
+					Buscar: <input type="text" size="15" ng-model="query">
+				</p>
+				<p>
+					<a href="#/addticket" class="btn btn-success btn-lg">Nuevo</a>
+				</p>				
+			</div>
+		</div>
+      
+    </div>
+  </div>
+  
+  <!-- *****    MODAL - Editar Ticket  ***** -->
+	<div class="modal fade" id="mdTicket" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header text-center">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Ticket</h4>
+	        </div>
+	        <div class="modal-body">
+<!-- 				{{tmpTicket.idTicket}} -->
+<!-- 				<table ng-hide="tmpTicket.idTicket" class="table table-striped" > -->
+<!-- 			      	<caption>Agregar nuevo</caption> -->
+<!-- 					<tbody> -->
+<!-- 						<tr><td>Tipo </td><td>							 -->
+<!-- 							<select ng-model="tmpTicket.idTipoTicket"> -->
+<!-- 								<option value="1">Alta de inventario</option> -->
+<!-- 								<option value="2">Alta de cliente </option> -->
+<!-- 								<option value="3">Alta de cuenta de mayor</option> -->
+<!-- 								<option value="4">Alta de almacén</option> -->
+<!-- 								<option value="5">Lista de precios</option> -->
+<!-- 								<option value="6">Factura electrónica</option> -->
+<!-- 								<option value="7">Nota de crédito </option> -->
+<!-- 								<option value="8">Permisos de usuario</option> -->
+<!-- 								<option value="9">Reporte  especial sap one</option> -->
+<!-- 								<option value="10">Otros</option> -->
+<!-- 								<option value="11">Red</option> -->
+<!-- 								<option value="12">Impresora</option> -->
+<!-- 								<option value="13">Internet</option> -->
+<!-- 								<option value="14">Equípo de Computo</option> -->
+<!-- 								<option value="15">Telefonía</option> -->
+<!-- 								<option value="16">Sistemas ABACO</option> -->
+<!-- 								<option value="17">Correo electrónico</option> -->
+<!-- 								<option value="18">VPN</option> -->
+<!-- 								<option value="19">Otro</option> -->
+<!-- 							</select> -->
+<!-- 							</td></tr> -->
+<!-- 						<tr><td>Descripción</td><td> -->
+<!-- 							<textarea rows="4" cols="25" ng-model="tmpTicket.descripcion"></textarea> -->
+<!-- 						</td></tr> -->
+<!-- 						<tr><td>Comentario</td><td><input type="text" ng-model="tmpTicket.comentario"></td></tr> -->
+<!-- 					</tbody> -->
+<!-- 			      </table> -->
+			      
+			      <table ng-show="tmpTicket.idTicket" class="table table-striped" >
+			      	<caption>Editar Solicitud</caption>
+					<tbody>
+						<tr><td>Alta</td><td>{{tmpTicket.fechaAlta}}</td></tr>
+						<tr><td>Tipo </td><td>							
+							<select ng-model="tmpTicket.idTipoTicket">
+								<option value="1">Alta de inventario</option>
+								<option value="2">Alta de cliente </option>
+								<option value="3">Alta de cuenta de mayor</option>
+								<option value="4">Alta de almacén</option>
+								<option value="5">Lista de precios</option>
+								<option value="6">Factura electrónica</option>
+								<option value="7">Nota de crédito </option>
+								<option value="8">Permisos de usuario</option>
+								<option value="9">Reporte  especial sap one</option>
+								<option value="10">Otros</option>
+								<option value="11">Red</option>
+								<option value="12">Impresora</option>
+								<option value="13">Internet</option>
+								<option value="14">Equípo de Computo</option>
+								<option value="15">Telefonía</option>
+								<option value="16">Sistemas ABACO</option>
+								<option value="17">Correo electrónico</option>
+								<option value="18">VPN</option>
+								<option value="19">Otro</option>
+							</select>
+							</td></tr>
+						<tr><td>Estatus</td><td>
+							<select ng-model="tmpTicket.idTipoEstatus">
+								<option value="1">Nuevo</option>
+								<option value="2">Abierto</option>
+								<option value="3">En atención</option>
+								<option value="4">Resuelto</option>
+								<option value="5">Cancelado</option>
+							</select>
+							</td></tr>
+						<tr><td>Asignar a</td><td>
+							<select ng-model="tmpTicket.idTecnicoAtencion">
+								<option value="1">Hugo</option>
+								<option value="2">Paco</option>
+								<option value="3">Luis</option>
+							</select>
+							</td></tr>
+						<tr><td>Descripción</td><td>
+							<textarea rows="4" cols="25" ng-model="tmpTicket.descripcion"></textarea>
+						</td></tr>
+						<tr><td>Comentario</td><td><input type="text" ng-model="tmpTicket.comentario"></td></tr>
+					</tbody>
+			      </table>
+			      <div>
+			      	<span class="{{mdClass}}">{{modalMsg}}</span>
+			      </div>
+				
+	        </div>
+	        <div class="modal-footer">
+	        	<div ng-show="showConfDiv">
+	        		<b>¿Desea eliminar este Ticket?</b>
+	        		<button type="button" class="btn btn-warning" ng-click="deleteTicket()">Confirmar</button>
+		        	<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+	        	</div>
+	        	<span ng-hide="showConfDiv">
+		        	<button type="button" class="btn btn-success" ng-hide="tmpTicket.idTicket" ng-click="saveTicket()">Agregar</button>
+		        	<button type="button" class="btn btn-success" ng-show="tmpTicket.idTicket" ng-click="updateTicket()">Actualizar</button>
+		        	<button type="button" class="btn btn-danger" ng-show="tmpTicket.idTicket" ng-click="confirmDelete()">Eliminar</button>
+		        </span>
+	          	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	  </div> 
+  
+	  
+	  <common-modal></common-modal>
+</div>

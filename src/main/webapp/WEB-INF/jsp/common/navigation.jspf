@@ -1,0 +1,34 @@
+
+<nav role="navigation" class="navbar navbar-default">
+	<div class="">
+		<!-- <a href="/myAccount" class="navbar-brand" title="${usuario.idRol }"><b>${usuario.nombre}</b> </a>-->
+		
+		<a href="/myAccount#/home" class="navbar-brand" title="${usuario.idRol }"><b>${usuario.nombre}</b> </a>
+	</div>
+	<div class="navbar-collapse">
+		<ul class="nav navbar-nav">
+			
+			<li id="lkhome"><a href="/myAccount">Home</a></li>
+			
+			<li ><a href="/ipblocker">Ip-Blocker</a></li>
+			
+			<c:if test="${usuario.idRol=='1' }">
+			<li id="lkAdmin"><a href="/management">Administración</a></li>
+			<li id="lkUsers"><a href="/list-users">Usuarios</a></li>
+			</c:if>
+			<li id="lkticket"><a href="/list-tickets">Tickets</a></li>
+			<!--  DEMOS
+			<li id="lktodo"><a href="/list-todos">Tareas</a></li>
+			<li id="lkPhones"><a href="/phones">Telefonos</a></li> -->
+			
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="/logout">Salir</a></li>
+		</ul>
+		
+			<input type="hidden" id="usrNombre" value="${usuario.nombre}">
+			<input type="hidden" id="usrId" value="${usuario.idUsuario}">
+			<input type="hidden" id="usrRol" value="${usuario.idRol }">
+	</div>
+</nav>

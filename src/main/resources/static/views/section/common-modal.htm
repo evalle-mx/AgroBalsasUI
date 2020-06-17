@@ -1,0 +1,29 @@
+	<!-- #####################   MODALES COMUNES  ##################### -->
+	<!-- *****    MODAL - mensaje informativo/Detalle   *****  -->
+	<div class="modal fade" id="mdCommon" role="dialog" data-backdrop="static" >
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title" style="text-align:center"><span id="mdTitle"></span>{{comMd.title}}</h4>
+	        </div>
+	        <div class="modal-body" style="text-align:center">
+				<div class="alert alert-success" role="alert" ng-show="comMd.bSuccess">
+					<span name="mdMessage"><b>Éxito</b></span>: {{comMd.message}}
+				</div>
+				<div class="alert alert-info" role="alert" ng-show="comMd.bInfo">
+					<span name="mdMessage"><b>Info</b></span>: {{comMd.message}}
+				</div>
+				<div class="alert alert-warning" role="alert" ng-show="comMd.bWarning">
+					<span name="mdMessage"><b>Advertencia</b></span>: {{comMd.message}}
+				</div>
+				<div class="alert alert-danger" role="alert" ng-show="comMd.bError">
+					<span name="mdMessage"><b>Error</b></span>: {{comMd.message}}
+				</div>			
+	        </div>
+	        <div class="modal-footer">
+	        	<button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+	        </div>
+	      </div>      
+	    </div>
+	</div>
